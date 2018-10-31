@@ -6,6 +6,10 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C56B75322189E29F00480AE7 /* ImageLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C56B75302189E29E00480AE7 /* ImageLoader.cpp */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		C56B751E2189E0A600480AE7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -20,6 +24,10 @@
 
 /* Begin PBXFileReference section */
 		C56B75202189E0A600480AE7 /* libImageAlgorithmBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libImageAlgorithmBase.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C56B752E2189E28000480AE7 /* stb_image_write.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image_write.h; sourceTree = "<group>"; };
+		C56B752F2189E28000480AE7 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		C56B75302189E29E00480AE7 /* ImageLoader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ImageLoader.cpp; sourceTree = "<group>"; };
+		C56B75312189E29F00480AE7 /* ImageLoader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ImageLoader.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +44,7 @@
 		C56B75172189E0A600480AE7 = {
 			isa = PBXGroup;
 			children = (
-				C56B75222189E0A600480AE7 /* ImageAlgorithmBase */,
+				C56B752C2189E28000480AE7 /* src */,
 				C56B75212189E0A600480AE7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,11 +57,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C56B75222189E0A600480AE7 /* ImageAlgorithmBase */ = {
+		C56B752C2189E28000480AE7 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				C56B752D2189E28000480AE7 /* ImageLoader */,
 			);
-			path = ImageAlgorithmBase;
+			path = src;
+			sourceTree = "<group>";
+		};
+		C56B752D2189E28000480AE7 /* ImageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				C56B752E2189E28000480AE7 /* stb_image_write.h */,
+				C56B752F2189E28000480AE7 /* stb_image.h */,
+				C56B75302189E29E00480AE7 /* ImageLoader.cpp */,
+				C56B75312189E29F00480AE7 /* ImageLoader.hpp */,
+			);
+			path = ImageLoader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +132,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C56B75322189E29F00480AE7 /* ImageLoader.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
