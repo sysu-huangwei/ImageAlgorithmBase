@@ -15,6 +15,7 @@
 		C56B7546218A9B7500480AE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C56B7544218A9B7500480AE7 /* LaunchScreen.storyboard */; };
 		C56B7549218A9B7500480AE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C56B7548218A9B7500480AE7 /* main.m */; };
 		C56B754E218A9C3800480AE7 /* Resource in Resources */ = {isa = PBXBuildFile; fileRef = C56B754D218A9C3800480AE7 /* Resource */; };
+		C56B7551218A9F0A00480AE7 /* UIImage+ImageData.mm in Sources */ = {isa = PBXBuildFile; fileRef = C56B754F218A9F0A00480AE7 /* UIImage+ImageData.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +47,8 @@
 		C56B7547218A9B7500480AE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C56B7548218A9B7500480AE7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C56B754D218A9C3800480AE7 /* Resource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resource; sourceTree = "<group>"; };
+		C56B754F218A9F0A00480AE7 /* UIImage+ImageData.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+ImageData.mm"; sourceTree = "<group>"; };
+		C56B7550218A9F0A00480AE7 /* UIImage+ImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageData.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				C56B753A218A9B7400480AE7 /* AppDelegate.m */,
 				C56B753C218A9B7400480AE7 /* ViewController.h */,
 				C56B753D218A9B7400480AE7 /* ViewController.m */,
+				C56B7550218A9F0A00480AE7 /* UIImage+ImageData.h */,
+				C56B754F218A9F0A00480AE7 /* UIImage+ImageData.mm */,
 				C56B753F218A9B7400480AE7 /* Main.storyboard */,
 				C56B7542218A9B7500480AE7 /* Assets.xcassets */,
 				C56B7544218A9B7500480AE7 /* LaunchScreen.storyboard */,
@@ -221,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C56B753E218A9B7400480AE7 /* ViewController.m in Sources */,
+				C56B7551218A9F0A00480AE7 /* UIImage+ImageData.mm in Sources */,
 				C56B7549218A9B7500480AE7 /* main.m in Sources */,
 				C56B753B218A9B7400480AE7 /* AppDelegate.m in Sources */,
 			);
