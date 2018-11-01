@@ -56,7 +56,7 @@ namespace iab {
      @return 图片RGBA数据，失败返回NULL
      */
     unsigned char* loadImageFromMemory(const unsigned char* memoryData, int length, int& width, int& height) {
-        return stbi_load_from_memory((unsigned char*)memoryData, length, &length, &width, nullptr, STBI_rgb_alpha);
+        return stbi_load_from_memory((unsigned char*)memoryData, length, &width, &height, nullptr, STBI_rgb_alpha);
     }
     
 }
