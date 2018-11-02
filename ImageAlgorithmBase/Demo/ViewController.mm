@@ -15,6 +15,7 @@
 #include "PSLighten.hpp"
 #include "PSLinearBurn.hpp"
 #include "PSLinearDodge.hpp"
+#include "PSColorBurn.hpp"
 
 @interface ViewController ()
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
@@ -50,7 +51,10 @@
     unsigned char* linearDodgeData = iab::PSLinearDodge::Run(imageAData, imageBData, widthA, heightA);
     UIImage* linearDodgeImage = [UIImage imageWithRGBAData:linearDodgeData withWidth:widthA withHeight:heightA];
     
-    [_imageView setImage:linearDodgeImage];
+    unsigned char* colorBurnData = iab::PSColorBurn::Run(imageAData, imageBData, widthA, heightA);
+    UIImage* colorBurnImage = [UIImage imageWithRGBAData:colorBurnData withWidth:widthA withHeight:heightA];
+    
+    [_imageView setImage:colorBurnImage];
     
 }
 

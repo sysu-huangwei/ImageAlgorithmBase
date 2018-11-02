@@ -18,6 +18,8 @@
 		C509976A218C1CAD001DD8B6 /* PSLinearBurn.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C5099768218C1CAD001DD8B6 /* PSLinearBurn.hpp */; };
 		C509976D218C2291001DD8B6 /* PSLinearDodge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C509976B218C2291001DD8B6 /* PSLinearDodge.cpp */; };
 		C509976E218C2291001DD8B6 /* PSLinearDodge.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C509976C218C2291001DD8B6 /* PSLinearDodge.hpp */; };
+		C5099771218C24B8001DD8B6 /* PSColorBurn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C509976F218C24B8001DD8B6 /* PSColorBurn.cpp */; };
+		C5099772218C24B8001DD8B6 /* PSColorBurn.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C5099770218C24B8001DD8B6 /* PSColorBurn.hpp */; };
 		C56B75322189E29F00480AE7 /* ImageLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C56B75302189E29E00480AE7 /* ImageLoader.cpp */; };
 		C56B753B218A9B7400480AE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C56B753A218A9B7400480AE7 /* AppDelegate.m */; };
 		C56B753E218A9B7400480AE7 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C56B753D218A9B7400480AE7 /* ViewController.mm */; };
@@ -67,6 +69,8 @@
 		C5099768218C1CAD001DD8B6 /* PSLinearBurn.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PSLinearBurn.hpp; sourceTree = "<group>"; };
 		C509976B218C2291001DD8B6 /* PSLinearDodge.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PSLinearDodge.cpp; sourceTree = "<group>"; };
 		C509976C218C2291001DD8B6 /* PSLinearDodge.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PSLinearDodge.hpp; sourceTree = "<group>"; };
+		C509976F218C24B8001DD8B6 /* PSColorBurn.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PSColorBurn.cpp; sourceTree = "<group>"; };
+		C5099770218C24B8001DD8B6 /* PSColorBurn.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PSColorBurn.hpp; sourceTree = "<group>"; };
 		C56B75202189E0A600480AE7 /* libImageAlgorithmBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libImageAlgorithmBase.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C56B752E2189E28000480AE7 /* stb_image_write.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image_write.h; sourceTree = "<group>"; };
 		C56B752F2189E28000480AE7 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 				C5099768218C1CAD001DD8B6 /* PSLinearBurn.hpp */,
 				C509976B218C2291001DD8B6 /* PSLinearDodge.cpp */,
 				C509976C218C2291001DD8B6 /* PSLinearDodge.hpp */,
+				C509976F218C24B8001DD8B6 /* PSColorBurn.cpp */,
+				C5099770218C24B8001DD8B6 /* PSColorBurn.hpp */,
 			);
 			path = Blend;
 			sourceTree = "<group>";
@@ -202,6 +208,7 @@
 				C5099762218BFC2B001DD8B6 /* PSDarken.hpp in Headers */,
 				C5099766218BFE56001DD8B6 /* PSLighten.hpp in Headers */,
 				C56B7557218AA30A00480AE7 /* ImageLoader.hpp in Headers */,
+				C5099772218C24B8001DD8B6 /* PSColorBurn.hpp in Headers */,
 				C509976A218C1CAD001DD8B6 /* PSLinearBurn.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5099771218C24B8001DD8B6 /* PSColorBurn.cpp in Sources */,
 				C5099765218BFE56001DD8B6 /* PSLighten.cpp in Sources */,
 				C5099761218BFC2B001DD8B6 /* PSDarken.cpp in Sources */,
 				C56B75322189E29F00480AE7 /* ImageLoader.cpp in Sources */,
