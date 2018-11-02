@@ -18,6 +18,7 @@
 #include "PSColorBurn.hpp"
 #include "PSColorDodge.hpp"
 #include "PSMultiply.hpp"
+#include "PSScreen.hpp"
 
 @interface ViewController ()
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
@@ -62,7 +63,10 @@
     unsigned char* multiplyData = iab::PSMultiply::Run(imageAData, imageBData, widthA, heightA);
     UIImage* multiplyImage = [UIImage imageWithRGBAData:multiplyData withWidth:widthA withHeight:heightA];
     
-    [_imageView setImage:multiplyImage];
+    unsigned char* screenData = iab::PSScreen::Run(imageAData, imageBData, widthA, heightA);
+    UIImage* screenImage = [UIImage imageWithRGBAData:screenData withWidth:widthA withHeight:heightA];
+    
+    [_imageView setImage:screenImage];
     
 }
 
