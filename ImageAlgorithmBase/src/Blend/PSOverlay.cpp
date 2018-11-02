@@ -32,12 +32,12 @@ namespace iab {
                     pResult[PS_ALPHA] = pA[PS_ALPHA] <= 127 ? 2.0 * pA[PS_ALPHA] / 255.0 * pB[PS_ALPHA] : 255.0 - 2.0 * (255.0 - pA[PS_ALPHA]) * (255.0 - pB[PS_ALPHA]) / 255.0;
                 }
                 else if (channel == 3) {
-                    pResult[PS_RED] = pA[PS_RED] / 255.0 * pB[PS_RED];
-                    pResult[PS_GREEN] = pA[PS_GREEN] / 255.0 * pB[PS_GREEN];
-                    pResult[PS_BLUE] = pA[PS_BLUE] / 255.0 * pB[PS_BLUE];
+                    pResult[PS_RED] = pA[PS_RED] <= 127 ? 2.0 * pA[PS_RED] / 255.0 * pB[PS_RED] : 255.0 - 2.0 * (255.0 - pA[PS_RED]) * (255.0 - pB[PS_RED]) / 255.0;
+                    pResult[PS_GREEN] = pA[PS_GREEN] <= 127 ? 2.0 * pA[PS_GREEN] / 255.0 * pB[PS_GREEN] : 255.0 - 2.0 * (255.0 - pA[PS_GREEN]) * (255.0 - pB[PS_GREEN]) / 255.0;
+                    pResult[PS_BLUE] = pA[PS_BLUE] <= 127 ? 2.0 * pA[PS_BLUE] / 255.0 * pB[PS_BLUE] : 255.0 - 2.0 * (255.0 - pA[PS_BLUE]) * (255.0 - pB[PS_BLUE]) / 255.0;
                 }
                 else if (channel == 1) {
-                    pResult[PS_RED] = pA[PS_RED] / 255.0 * pB[PS_RED];
+                    pResult[PS_RED] = pA[PS_RED] <= 127 ? 2.0 * pA[PS_RED] / 255.0 * pB[PS_RED] : 255.0 - 2.0 * (255.0 - pA[PS_RED]) * (255.0 - pB[PS_RED]) / 255.0;
                 }
                 pA += channel;
                 pB += channel;

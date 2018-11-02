@@ -20,6 +20,7 @@
 #include "PSMultiply.hpp"
 #include "PSScreen.hpp"
 #include "PSOverlay.hpp"
+#include "PSSoftLight.hpp"
 
 @interface ViewController ()
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
@@ -67,10 +68,10 @@
     unsigned char* screenData = iab::PSScreen::Run(imageAData, imageBData, widthA, heightA);
     UIImage* screenImage = [UIImage imageWithRGBAData:screenData withWidth:widthA withHeight:heightA];
     
-    unsigned char* overlayData = iab::PSOverlay::Run(imageAData, imageBData, widthA, heightA);
-    UIImage* overlayImage = [UIImage imageWithRGBAData:overlayData withWidth:widthA withHeight:heightA];
+    unsigned char* softLightData = iab::PSSoftLight::Run(imageAData, imageBData, widthA, heightA);
+    UIImage* softLightImage = [UIImage imageWithRGBAData:softLightData withWidth:widthA withHeight:heightA];
     
-    [_imageView setImage:overlayImage];
+    [_imageView setImage:softLightImage];
     
 }
 
