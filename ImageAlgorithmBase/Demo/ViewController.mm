@@ -17,6 +17,7 @@
 #include "PSLinearDodge.hpp"
 #include "PSColorBurn.hpp"
 #include "PSColorDodge.hpp"
+#include "PSMultiply.hpp"
 
 @interface ViewController ()
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
@@ -58,7 +59,10 @@
     unsigned char* colorDodgeData = iab::PSColorDodge::Run(imageAData, imageBData, widthA, heightA);
     UIImage* colorDodgeImage = [UIImage imageWithRGBAData:colorDodgeData withWidth:widthA withHeight:heightA];
     
-    [_imageView setImage:colorDodgeImage];
+    unsigned char* multiplyData = iab::PSMultiply::Run(imageAData, imageBData, widthA, heightA);
+    UIImage* multiplyImage = [UIImage imageWithRGBAData:multiplyData withWidth:widthA withHeight:heightA];
+    
+    [_imageView setImage:multiplyImage];
     
 }
 
