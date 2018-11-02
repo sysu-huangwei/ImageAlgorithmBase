@@ -10,6 +10,7 @@
 
 #import "UIImage+ImageData.h"
 #include "ImageLoader.hpp"
+#include "PSDissolve.hpp"
 
 @interface ViewController ()
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
@@ -30,10 +31,11 @@
     unsigned char* imageAData = iab::loadImageFromFile([imageAPath UTF8String], widthA, heightA);
     unsigned char* imageBData = iab::loadImageFromFile([imageBPath UTF8String], widthB, heightB);
     
-    UIImage* imageA = [UIImage imageWithRGBAData:imageAData withWidth:widthA withHeight:heightA];
-    UIImage* imageB = [UIImage imageWithRGBAData:imageBData withWidth:widthB withHeight:heightB];
+    unsigned char* dissolveData = iab::PSDissolve::Run(imageAData, imageBData, widthA, heightA);
     
-    [_imageView setImage:imageA];
+    UIImage* dissolveImage = [UIImage imageWithRGBAData:dissolveData withWidth:widthA withHeight:heightA];
+    
+    [_imageView setImage:resultImage];
     
 }
 

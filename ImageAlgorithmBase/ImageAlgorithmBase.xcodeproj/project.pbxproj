@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C509975A218B3704001DD8B6 /* PSDissolve.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C5099758218B3704001DD8B6 /* PSDissolve.cpp */; };
+		C509975B218B3704001DD8B6 /* PSDissolve.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C5099759218B3704001DD8B6 /* PSDissolve.hpp */; };
+		C509975D218BF7E1001DD8B6 /* PSDefine.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C509975C218BF7E1001DD8B6 /* PSDefine.hpp */; };
 		C56B75322189E29F00480AE7 /* ImageLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C56B75302189E29E00480AE7 /* ImageLoader.cpp */; };
 		C56B753B218A9B7400480AE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C56B753A218A9B7400480AE7 /* AppDelegate.m */; };
 		C56B753E218A9B7400480AE7 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C56B753D218A9B7400480AE7 /* ViewController.mm */; };
@@ -45,6 +48,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C5099758218B3704001DD8B6 /* PSDissolve.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PSDissolve.cpp; sourceTree = "<group>"; };
+		C5099759218B3704001DD8B6 /* PSDissolve.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PSDissolve.hpp; sourceTree = "<group>"; };
+		C509975C218BF7E1001DD8B6 /* PSDefine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PSDefine.hpp; sourceTree = "<group>"; };
 		C56B75202189E0A600480AE7 /* libImageAlgorithmBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libImageAlgorithmBase.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C56B752E2189E28000480AE7 /* stb_image_write.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image_write.h; sourceTree = "<group>"; };
 		C56B752F2189E28000480AE7 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
@@ -84,6 +90,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C5099757218B36CD001DD8B6 /* Blend */ = {
+			isa = PBXGroup;
+			children = (
+				C5099758218B3704001DD8B6 /* PSDissolve.cpp */,
+				C5099759218B3704001DD8B6 /* PSDissolve.hpp */,
+				C509975C218BF7E1001DD8B6 /* PSDefine.hpp */,
+			);
+			path = Blend;
+			sourceTree = "<group>";
+		};
 		C56B75172189E0A600480AE7 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +122,7 @@
 		C56B752C2189E28000480AE7 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				C5099757218B36CD001DD8B6 /* Blend */,
 				C56B752D2189E28000480AE7 /* ImageLoader */,
 			);
 			path = src;
@@ -155,6 +172,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C509975D218BF7E1001DD8B6 /* PSDefine.hpp in Headers */,
+				C509975B218B3704001DD8B6 /* PSDissolve.hpp in Headers */,
 				C56B7557218AA30A00480AE7 /* ImageLoader.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C56B75322189E29F00480AE7 /* ImageLoader.cpp in Sources */,
+				C509975A218B3704001DD8B6 /* PSDissolve.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
