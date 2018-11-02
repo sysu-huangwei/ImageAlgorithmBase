@@ -23,6 +23,7 @@
 #include "PSSoftLight.hpp"
 #include "PSHardLight.hpp"
 #include "PSVividLight.hpp"
+#include "PSPinLight.hpp"
 
 @interface ViewController ()
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
@@ -79,7 +80,10 @@
     unsigned char* vividLightData = iab::PSVividLight::Run(imageAData, imageBData, widthA, heightA);
     UIImage* vividLightImage = [UIImage imageWithRGBAData:vividLightData withWidth:widthA withHeight:heightA];
     
-    [_imageView setImage:vividLightImage];
+    unsigned char* pinLightData = iab::PSPinLight::Run(imageAData, imageBData, widthA, heightA);
+    UIImage* pinLightImage = [UIImage imageWithRGBAData:pinLightData withWidth:widthA withHeight:heightA];
+    
+    [_imageView setImage:pinLightImage];
     
 }
 
