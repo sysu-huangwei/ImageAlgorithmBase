@@ -12,6 +12,7 @@
 #include "ImageLoader.hpp"
 #include "PSDissolve.hpp"
 #include "PSDarken.hpp"
+#include "PSLighten.hpp"
 
 @interface ViewController ()
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
@@ -38,7 +39,10 @@
     unsigned char* darkenData = iab::PSDarken::Run(imageAData, imageBData, widthA, heightA);
     UIImage* darkenImage = [UIImage imageWithRGBAData:darkenData withWidth:widthA withHeight:heightA];
     
-    [_imageView setImage:darkenImage];
+    unsigned char* lightenData = iab::PSLighten::Run(imageAData, imageBData, widthA, heightA);
+    UIImage* lightenImage = [UIImage imageWithRGBAData:lightenData withWidth:widthA withHeight:heightA];
+    
+    [_imageView setImage:lightenImage];
     
 }
 

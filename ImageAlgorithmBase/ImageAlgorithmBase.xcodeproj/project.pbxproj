@@ -12,6 +12,8 @@
 		C509975D218BF7E1001DD8B6 /* PSDefine.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C509975C218BF7E1001DD8B6 /* PSDefine.hpp */; };
 		C5099761218BFC2B001DD8B6 /* PSDarken.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C509975F218BFC2B001DD8B6 /* PSDarken.cpp */; };
 		C5099762218BFC2B001DD8B6 /* PSDarken.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C5099760218BFC2B001DD8B6 /* PSDarken.hpp */; };
+		C5099765218BFE56001DD8B6 /* PSLighten.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C5099763218BFE56001DD8B6 /* PSLighten.cpp */; };
+		C5099766218BFE56001DD8B6 /* PSLighten.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C5099764218BFE56001DD8B6 /* PSLighten.hpp */; };
 		C56B75322189E29F00480AE7 /* ImageLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C56B75302189E29E00480AE7 /* ImageLoader.cpp */; };
 		C56B753B218A9B7400480AE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C56B753A218A9B7400480AE7 /* AppDelegate.m */; };
 		C56B753E218A9B7400480AE7 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C56B753D218A9B7400480AE7 /* ViewController.mm */; };
@@ -55,6 +57,8 @@
 		C509975C218BF7E1001DD8B6 /* PSDefine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PSDefine.hpp; sourceTree = "<group>"; };
 		C509975F218BFC2B001DD8B6 /* PSDarken.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PSDarken.cpp; sourceTree = "<group>"; };
 		C5099760218BFC2B001DD8B6 /* PSDarken.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PSDarken.hpp; sourceTree = "<group>"; };
+		C5099763218BFE56001DD8B6 /* PSLighten.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PSLighten.cpp; sourceTree = "<group>"; };
+		C5099764218BFE56001DD8B6 /* PSLighten.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PSLighten.hpp; sourceTree = "<group>"; };
 		C56B75202189E0A600480AE7 /* libImageAlgorithmBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libImageAlgorithmBase.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C56B752E2189E28000480AE7 /* stb_image_write.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image_write.h; sourceTree = "<group>"; };
 		C56B752F2189E28000480AE7 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 				C5099759218B3704001DD8B6 /* PSDissolve.hpp */,
 				C509975F218BFC2B001DD8B6 /* PSDarken.cpp */,
 				C5099760218BFC2B001DD8B6 /* PSDarken.hpp */,
+				C5099763218BFE56001DD8B6 /* PSLighten.cpp */,
+				C5099764218BFE56001DD8B6 /* PSLighten.hpp */,
 			);
 			path = Blend;
 			sourceTree = "<group>";
@@ -181,6 +187,7 @@
 				C509975D218BF7E1001DD8B6 /* PSDefine.hpp in Headers */,
 				C509975B218B3704001DD8B6 /* PSDissolve.hpp in Headers */,
 				C5099762218BFC2B001DD8B6 /* PSDarken.hpp in Headers */,
+				C5099766218BFE56001DD8B6 /* PSLighten.hpp in Headers */,
 				C56B7557218AA30A00480AE7 /* ImageLoader.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5099765218BFE56001DD8B6 /* PSLighten.cpp in Sources */,
 				C5099761218BFC2B001DD8B6 /* PSDarken.cpp in Sources */,
 				C56B75322189E29F00480AE7 /* ImageLoader.cpp in Sources */,
 				C509975A218B3704001DD8B6 /* PSDissolve.cpp in Sources */,

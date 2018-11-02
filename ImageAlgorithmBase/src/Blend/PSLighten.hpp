@@ -1,20 +1,20 @@
 //
-//  PSDarken.hpp
+//  PSLighten.hpp
 //  ImageAlgorithmBase
 //
 //  Created by HW on 2018/11/2.
 //  Copyright © 2018 meitu. All rights reserved.
 //
 
-#ifndef PSDarken_hpp
-#define PSDarken_hpp
+#ifndef PSLighten_hpp
+#define PSLighten_hpp
 
 namespace iab {
-    class PSDarken {
+    class PSLighten {
     public:
         
         /**
-         PS混合：变暗
+         PS混合：变亮
          
          @param imageA 上层图
          @param imageB 下层图
@@ -27,4 +27,4 @@ namespace iab {
     };
 }
 
-#endif /* PSDarken_hpp */
+#endif /* PSLighten_hpp */
