@@ -22,6 +22,7 @@
 #include "PSOverlay.hpp"
 #include "PSSoftLight.hpp"
 #include "PSHardLight.hpp"
+#include "PSVividLight.hpp"
 
 @interface ViewController ()
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
@@ -75,7 +76,10 @@
     unsigned char* hardLightData = iab::PSHardLight::Run(imageAData, imageBData, widthA, heightA);
     UIImage* hardLightImage = [UIImage imageWithRGBAData:hardLightData withWidth:widthA withHeight:heightA];
     
-    [_imageView setImage:hardLightImage];
+    unsigned char* vividLightData = iab::PSVividLight::Run(imageAData, imageBData, widthA, heightA);
+    UIImage* vividLightImage = [UIImage imageWithRGBAData:vividLightData withWidth:widthA withHeight:heightA];
+    
+    [_imageView setImage:vividLightImage];
     
 }
 

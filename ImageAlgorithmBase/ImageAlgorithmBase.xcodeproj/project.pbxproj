@@ -32,6 +32,8 @@
 		C5099786218C4509001DD8B6 /* PSSoftLight.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C5099784218C4509001DD8B6 /* PSSoftLight.hpp */; };
 		C5099789218C6CE1001DD8B6 /* PSHardLight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C5099787218C6CE1001DD8B6 /* PSHardLight.cpp */; };
 		C509978A218C6CE1001DD8B6 /* PSHardLight.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C5099788218C6CE1001DD8B6 /* PSHardLight.hpp */; };
+		C509978D218C6FF4001DD8B6 /* PSVividLight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C509978B218C6FF4001DD8B6 /* PSVividLight.cpp */; };
+		C509978E218C6FF4001DD8B6 /* PSVividLight.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C509978C218C6FF4001DD8B6 /* PSVividLight.hpp */; };
 		C56B75322189E29F00480AE7 /* ImageLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C56B75302189E29E00480AE7 /* ImageLoader.cpp */; };
 		C56B753B218A9B7400480AE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C56B753A218A9B7400480AE7 /* AppDelegate.m */; };
 		C56B753E218A9B7400480AE7 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C56B753D218A9B7400480AE7 /* ViewController.mm */; };
@@ -95,6 +97,8 @@
 		C5099784218C4509001DD8B6 /* PSSoftLight.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PSSoftLight.hpp; sourceTree = "<group>"; };
 		C5099787218C6CE1001DD8B6 /* PSHardLight.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PSHardLight.cpp; sourceTree = "<group>"; };
 		C5099788218C6CE1001DD8B6 /* PSHardLight.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PSHardLight.hpp; sourceTree = "<group>"; };
+		C509978B218C6FF4001DD8B6 /* PSVividLight.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PSVividLight.cpp; sourceTree = "<group>"; };
+		C509978C218C6FF4001DD8B6 /* PSVividLight.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PSVividLight.hpp; sourceTree = "<group>"; };
 		C56B75202189E0A600480AE7 /* libImageAlgorithmBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libImageAlgorithmBase.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C56B752E2189E28000480AE7 /* stb_image_write.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image_write.h; sourceTree = "<group>"; };
 		C56B752F2189E28000480AE7 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
@@ -162,6 +166,8 @@
 				C5099784218C4509001DD8B6 /* PSSoftLight.hpp */,
 				C5099787218C6CE1001DD8B6 /* PSHardLight.cpp */,
 				C5099788218C6CE1001DD8B6 /* PSHardLight.hpp */,
+				C509978B218C6FF4001DD8B6 /* PSVividLight.cpp */,
+				C509978C218C6FF4001DD8B6 /* PSVividLight.hpp */,
 			);
 			path = Blend;
 			sourceTree = "<group>";
@@ -242,6 +248,7 @@
 				C509975D218BF7E1001DD8B6 /* PSDefine.hpp in Headers */,
 				C5099776218C3164001DD8B6 /* PSColorDodge.hpp in Headers */,
 				C509977E218C34DB001DD8B6 /* PSScreen.hpp in Headers */,
+				C509978E218C6FF4001DD8B6 /* PSVividLight.hpp in Headers */,
 				C509975B218B3704001DD8B6 /* PSDissolve.hpp in Headers */,
 				C5099786218C4509001DD8B6 /* PSSoftLight.hpp in Headers */,
 				C5099762218BFC2B001DD8B6 /* PSDarken.hpp in Headers */,
@@ -351,6 +358,7 @@
 			files = (
 				C509977D218C34DB001DD8B6 /* PSScreen.cpp in Sources */,
 				C5099771218C24B8001DD8B6 /* PSColorBurn.cpp in Sources */,
+				C509978D218C6FF4001DD8B6 /* PSVividLight.cpp in Sources */,
 				C5099765218BFE56001DD8B6 /* PSLighten.cpp in Sources */,
 				C5099761218BFC2B001DD8B6 /* PSDarken.cpp in Sources */,
 				C56B75322189E29F00480AE7 /* ImageLoader.cpp in Sources */,
