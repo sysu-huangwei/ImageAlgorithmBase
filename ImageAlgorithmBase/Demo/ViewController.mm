@@ -13,6 +13,7 @@
 #include "PSDissolve.hpp"
 #include "PSDarken.hpp"
 #include "PSLighten.hpp"
+#include "PSLinearBurn.hpp"
 
 @interface ViewController ()
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
@@ -42,7 +43,10 @@
     unsigned char* lightenData = iab::PSLighten::Run(imageAData, imageBData, widthA, heightA);
     UIImage* lightenImage = [UIImage imageWithRGBAData:lightenData withWidth:widthA withHeight:heightA];
     
-    [_imageView setImage:lightenImage];
+    unsigned char* linearBurnData = iab::PSLinearBurn::Run(imageAData, imageBData, widthA, heightA);
+    UIImage* linearBurnImage = [UIImage imageWithRGBAData:linearBurnData withWidth:widthA withHeight:heightA];
+    
+    [_imageView setImage:linearBurnImage];
     
 }
 
