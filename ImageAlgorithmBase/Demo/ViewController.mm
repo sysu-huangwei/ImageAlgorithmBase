@@ -25,6 +25,7 @@
 #include "PSVividLight.hpp"
 #include "PSPinLight.hpp"
 #include "PSLinearLight.hpp"
+#include "PSHardMix.hpp"
 
 @interface ViewController ()
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
@@ -87,7 +88,10 @@
     unsigned char* linearLightData = iab::PSLinearLight::Run(imageAData, imageBData, widthA, heightA);
     UIImage* linearLightImage = [UIImage imageWithRGBAData:linearLightData withWidth:widthA withHeight:heightA];
     
-    [_imageView setImage:linearLightImage];
+    unsigned char* hardMixData = iab::PSHardMix::Run(imageAData, imageBData, widthA, heightA);
+    UIImage* hardMixImage = [UIImage imageWithRGBAData:hardMixData withWidth:widthA withHeight:heightA];
+    
+    [_imageView setImage:hardMixImage];
     
 }
 

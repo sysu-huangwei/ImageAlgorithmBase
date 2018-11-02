@@ -38,6 +38,8 @@
 		C5099792218C7FBA001DD8B6 /* PSPinLight.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C5099790218C7FBA001DD8B6 /* PSPinLight.hpp */; };
 		C5099795218C8377001DD8B6 /* PSLinearLight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C5099793218C8377001DD8B6 /* PSLinearLight.cpp */; };
 		C5099796218C8377001DD8B6 /* PSLinearLight.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C5099794218C8377001DD8B6 /* PSLinearLight.hpp */; };
+		C5099799218C85A6001DD8B6 /* PSHardMix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C5099797218C85A6001DD8B6 /* PSHardMix.cpp */; };
+		C509979A218C85A6001DD8B6 /* PSHardMix.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C5099798218C85A6001DD8B6 /* PSHardMix.hpp */; };
 		C56B75322189E29F00480AE7 /* ImageLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C56B75302189E29E00480AE7 /* ImageLoader.cpp */; };
 		C56B753B218A9B7400480AE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C56B753A218A9B7400480AE7 /* AppDelegate.m */; };
 		C56B753E218A9B7400480AE7 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C56B753D218A9B7400480AE7 /* ViewController.mm */; };
@@ -107,6 +109,8 @@
 		C5099790218C7FBA001DD8B6 /* PSPinLight.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PSPinLight.hpp; sourceTree = "<group>"; };
 		C5099793218C8377001DD8B6 /* PSLinearLight.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PSLinearLight.cpp; sourceTree = "<group>"; };
 		C5099794218C8377001DD8B6 /* PSLinearLight.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PSLinearLight.hpp; sourceTree = "<group>"; };
+		C5099797218C85A6001DD8B6 /* PSHardMix.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PSHardMix.cpp; sourceTree = "<group>"; };
+		C5099798218C85A6001DD8B6 /* PSHardMix.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PSHardMix.hpp; sourceTree = "<group>"; };
 		C56B75202189E0A600480AE7 /* libImageAlgorithmBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libImageAlgorithmBase.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C56B752E2189E28000480AE7 /* stb_image_write.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image_write.h; sourceTree = "<group>"; };
 		C56B752F2189E28000480AE7 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
@@ -180,6 +184,8 @@
 				C5099790218C7FBA001DD8B6 /* PSPinLight.hpp */,
 				C5099793218C8377001DD8B6 /* PSLinearLight.cpp */,
 				C5099794218C8377001DD8B6 /* PSLinearLight.hpp */,
+				C5099797218C85A6001DD8B6 /* PSHardMix.cpp */,
+				C5099798218C85A6001DD8B6 /* PSHardMix.hpp */,
 			);
 			path = Blend;
 			sourceTree = "<group>";
@@ -271,6 +277,7 @@
 				C5099782218C3A66001DD8B6 /* PSOverlay.hpp in Headers */,
 				C5099772218C24B8001DD8B6 /* PSColorBurn.hpp in Headers */,
 				C509976A218C1CAD001DD8B6 /* PSLinearBurn.hpp in Headers */,
+				C509979A218C85A6001DD8B6 /* PSHardMix.hpp in Headers */,
 				C509977A218C334B001DD8B6 /* PSMultiply.hpp in Headers */,
 				C509978A218C6CE1001DD8B6 /* PSHardLight.hpp in Headers */,
 			);
@@ -385,6 +392,7 @@
 				C5099789218C6CE1001DD8B6 /* PSHardLight.cpp in Sources */,
 				C5099781218C3A66001DD8B6 /* PSOverlay.cpp in Sources */,
 				C5099775218C3164001DD8B6 /* PSColorDodge.cpp in Sources */,
+				C5099799218C85A6001DD8B6 /* PSHardMix.cpp in Sources */,
 				C509976D218C2291001DD8B6 /* PSLinearDodge.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
