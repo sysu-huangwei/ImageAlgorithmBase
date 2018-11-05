@@ -28,6 +28,7 @@
 #include "PSHardMix.hpp"
 #include "PSDarkerColor.hpp"
 #include "PSLighterColor.hpp"
+#include "PSDifference.hpp"
 
 @interface ViewController ()
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
@@ -99,7 +100,10 @@
     unsigned char* lighterColorData = iab::PSLighterColor::Run(imageAData, imageBData, widthA, heightA);
     UIImage* lighterColorImage = [UIImage imageWithRGBAData:lighterColorData withWidth:widthA withHeight:heightA];
     
-    [_imageView setImage:lighterColorImage];
+    unsigned char* differenceData = iab::PSDifference::Run(imageAData, imageBData, widthA, heightA);
+    UIImage* differenceImage = [UIImage imageWithRGBAData:differenceData withWidth:widthA withHeight:heightA];
+    
+    [_imageView setImage:differenceImage];
     
 }
 
