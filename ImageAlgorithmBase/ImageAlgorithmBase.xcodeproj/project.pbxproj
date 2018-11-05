@@ -54,6 +54,8 @@
 		C56B7558218AA31300480AE7 /* ImageLoader.hpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = C56B75312189E29F00480AE7 /* ImageLoader.hpp */; };
 		C57353E6218FD6220047DB06 /* PSDarkerColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C57353E4218FD6220047DB06 /* PSDarkerColor.cpp */; };
 		C57353E7218FD6220047DB06 /* PSDarkerColor.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C57353E5218FD6220047DB06 /* PSDarkerColor.hpp */; };
+		C57353EA218FD8610047DB06 /* PSLighterColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C57353E8218FD8610047DB06 /* PSLighterColor.cpp */; };
+		C57353EB218FD8610047DB06 /* PSLighterColor.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C57353E9218FD8610047DB06 /* PSLighterColor.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +135,8 @@
 		C56B7550218A9F0A00480AE7 /* UIImage+ImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageData.h"; sourceTree = "<group>"; };
 		C57353E4218FD6220047DB06 /* PSDarkerColor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PSDarkerColor.cpp; sourceTree = "<group>"; };
 		C57353E5218FD6220047DB06 /* PSDarkerColor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PSDarkerColor.hpp; sourceTree = "<group>"; };
+		C57353E8218FD8610047DB06 /* PSLighterColor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PSLighterColor.cpp; sourceTree = "<group>"; };
+		C57353E9218FD8610047DB06 /* PSLighterColor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PSLighterColor.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +196,8 @@
 				C5099798218C85A6001DD8B6 /* PSHardMix.hpp */,
 				C57353E4218FD6220047DB06 /* PSDarkerColor.cpp */,
 				C57353E5218FD6220047DB06 /* PSDarkerColor.hpp */,
+				C57353E8218FD8610047DB06 /* PSLighterColor.cpp */,
+				C57353E9218FD8610047DB06 /* PSLighterColor.hpp */,
 			);
 			path = Blend;
 			sourceTree = "<group>";
@@ -273,6 +279,7 @@
 				C509975D218BF7E1001DD8B6 /* PSDefine.hpp in Headers */,
 				C5099776218C3164001DD8B6 /* PSColorDodge.hpp in Headers */,
 				C509977E218C34DB001DD8B6 /* PSScreen.hpp in Headers */,
+				C57353EB218FD8610047DB06 /* PSLighterColor.hpp in Headers */,
 				C509978E218C6FF4001DD8B6 /* PSVividLight.hpp in Headers */,
 				C509975B218B3704001DD8B6 /* PSDissolve.hpp in Headers */,
 				C5099792218C7FBA001DD8B6 /* PSPinLight.hpp in Headers */,
@@ -402,6 +409,7 @@
 				C57353E6218FD6220047DB06 /* PSDarkerColor.cpp in Sources */,
 				C5099799218C85A6001DD8B6 /* PSHardMix.cpp in Sources */,
 				C509976D218C2291001DD8B6 /* PSLinearDodge.cpp in Sources */,
+				C57353EA218FD8610047DB06 /* PSLighterColor.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
