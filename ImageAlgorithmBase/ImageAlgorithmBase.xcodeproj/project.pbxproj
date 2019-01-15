@@ -64,6 +64,8 @@
 		C58B355221ED79280026F45C /* PSBlendType.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C58B355121ED79280026F45C /* PSBlendType.hpp */; };
 		C58B355521ED7E590026F45C /* PSBlend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C58B355321ED7E590026F45C /* PSBlend.cpp */; };
 		C58B355621ED7E590026F45C /* PSBlend.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C58B355421ED7E590026F45C /* PSBlend.hpp */; };
+		C58B356B21EDC0290026F45C /* PSGray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C58B356921EDC0290026F45C /* PSGray.cpp */; };
+		C58B356C21EDC0290026F45C /* PSGray.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C58B356A21EDC0290026F45C /* PSGray.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,6 +155,8 @@
 		C58B355121ED79280026F45C /* PSBlendType.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PSBlendType.hpp; sourceTree = "<group>"; };
 		C58B355321ED7E590026F45C /* PSBlend.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PSBlend.cpp; sourceTree = "<group>"; };
 		C58B355421ED7E590026F45C /* PSBlend.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PSBlend.hpp; sourceTree = "<group>"; };
+		C58B356921EDC0290026F45C /* PSGray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PSGray.cpp; sourceTree = "<group>"; };
+		C58B356A21EDC0290026F45C /* PSGray.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PSGray.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +212,7 @@
 		C56B752C2189E28000480AE7 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				C58B356821EDC0090026F45C /* Adjust */,
 				C509975C218BF7E1001DD8B6 /* PSDefine.hpp */,
 				C5099757218B36CD001DD8B6 /* Blend */,
 				C56B752D2189E28000480AE7 /* ImageLoader */,
@@ -299,6 +304,15 @@
 			path = BlendAlgorithm;
 			sourceTree = "<group>";
 		};
+		C58B356821EDC0090026F45C /* Adjust */ = {
+			isa = PBXGroup;
+			children = (
+				C58B356921EDC0290026F45C /* PSGray.cpp */,
+				C58B356A21EDC0290026F45C /* PSGray.hpp */,
+			);
+			path = Adjust;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -316,6 +330,7 @@
 				C509978E218C6FF4001DD8B6 /* PSVividLight.hpp in Headers */,
 				C509975B218B3704001DD8B6 /* PSDissolve.hpp in Headers */,
 				C58B355621ED7E590026F45C /* PSBlend.hpp in Headers */,
+				C58B356C21EDC0290026F45C /* PSGray.hpp in Headers */,
 				C5099792218C7FBA001DD8B6 /* PSPinLight.hpp in Headers */,
 				C5099796218C8377001DD8B6 /* PSLinearLight.hpp in Headers */,
 				C57353EF218FDB680047DB06 /* PSDifference.hpp in Headers */,
@@ -433,6 +448,7 @@
 				C509978D218C6FF4001DD8B6 /* PSVividLight.cpp in Sources */,
 				C5099765218BFE56001DD8B6 /* PSLighten.cpp in Sources */,
 				C5099791218C7FBA001DD8B6 /* PSPinLight.cpp in Sources */,
+				C58B356B21EDC0290026F45C /* PSGray.cpp in Sources */,
 				C5099761218BFC2B001DD8B6 /* PSDarken.cpp in Sources */,
 				C56B75322189E29F00480AE7 /* ImageLoader.cpp in Sources */,
 				C5099769218C1CAD001DD8B6 /* PSLinearBurn.cpp in Sources */,
