@@ -1,13 +1,13 @@
 //
-//  PSBlendType.h
+//  PSBlendType.hpp
 //  ImageAlgorithmBase
 //
 //  Created by HW on 2019/1/15.
 //  Copyright © 2019 meitu. All rights reserved.
 //
 
-#ifndef PSBlendType_h
-#define PSBlendType_h
+#ifndef PSBlendType_hpp
+#define PSBlendType_hpp
 
 typedef enum PSBlendType {
     PSBlendType_Unknow = 0,         //未定义
@@ -33,4 +33,4 @@ typedef enum PSBlendType {
     PSBlendType_Dissolve = 20,      //溶解
 } PSBlendType;
 
-#endif /* PSBlendType_h */
+#endif /* PSBlendType_hpp */
