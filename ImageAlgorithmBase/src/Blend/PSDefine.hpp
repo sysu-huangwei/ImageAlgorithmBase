@@ -15,15 +15,15 @@
 #define PS_ALPHA 3
 
 #ifndef SAFE_DELETE
-#define SAFE_DELETE(x) { if (x) delete (x); (x) = NULL; }    //定义安全释放函数
+#define SAFE_DELETE(x) { if (x) delete (x); (x) = nullptr; }    //定义安全释放函数
 #endif
 
 #ifndef SAFE_DELETE_ARRAY
-#define SAFE_DELETE_ARRAY(x) { if (x) delete [] (x); (x) = NULL; }    //定义安全释放函数
+#define SAFE_DELETE_ARRAY(x) { if (x) delete [] (x); (x) = nullptr; }    //定义安全释放函数
 #endif
 
 #ifndef SAFE_FREE
-#define SAFE_FREE(p) if(p != NULL) {free(p); p = NULL;}
+#define SAFE_FREE(p) if(p != NULL) {free(p); p = nullptr;}
 #endif
 
 #endif /* PSDefine_h */
