@@ -354,7 +354,7 @@
     return [self imageWithARGBData:data withWidth:size.width withHeight:size.height];
 }
 
-+ (UIImage*) imageWithGrayData:(unsigned char*) pGrayData width:(int)width height:(int) height
++ (UIImage*) imageWithGrayData:(unsigned char*) pGrayData withWidth:(int)width withHeight:(int) height
 {
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceGray();
     CGContextRef context = CGBitmapContextCreate (pGrayData,width,height,8,width,colorSpace,kCGImageAlphaNone);

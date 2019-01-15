@@ -36,7 +36,7 @@
 + (UIImage*) imageWithRGBAData:(unsigned char*) data withSize:(CGSize) size;
 + (UIImage*) imageWithRGBAData:(unsigned char*)data withWidth:(int) width withHeight:(int) height;
 
-+ (UIImage*) imageWithGrayData:(unsigned char*) pGrayData width:(int)width height:(int) height;
++ (UIImage*) imageWithGrayData:(unsigned char*) pGrayData withWidth:(int)width withHeight:(int) height;
 
 
 /*

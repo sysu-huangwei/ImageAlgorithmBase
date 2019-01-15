@@ -30,6 +30,7 @@
 #include "PSLighterColor.hpp"
 #include "PSDifference.hpp"
 #include "PSExclusion.hpp"
+#include "PSGray.hpp"
 
 @interface ViewController ()
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
@@ -107,7 +108,10 @@
     unsigned char* exclusionData = iab::PSExclusion::Run(imageAData, imageBData, widthA, heightA);
     UIImage* exclusionImage = [UIImage imageWithRGBAData:exclusionData withWidth:widthA withHeight:heightA];
     
-    [_imageView setImage:exclusionImage];
+    unsigned char* grayData = iab::PSGray::Run(imageAData, widthA, heightA);
+    UIImage* grayImage = [UIImage imageWithGrayData:grayData withWidth:widthA withHeight:heightA];
+    
+    [_imageView setImage:grayImage];
     
 }
 
