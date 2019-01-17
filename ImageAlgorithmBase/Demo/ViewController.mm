@@ -31,6 +31,7 @@
 #include "PSDifference.hpp"
 #include "PSExclusion.hpp"
 #include "PSGray.hpp"
+#include "PSAutoColorLevel.hpp"
 
 @interface ViewController ()
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
@@ -111,7 +112,10 @@
     unsigned char* grayData = iab::PSGray::Run(imageAData, widthA, heightA);
     UIImage* grayImage = [UIImage imageWithGrayData:grayData withWidth:widthA withHeight:heightA];
     
-    [_imageView setImage:grayImage];
+    unsigned char* autoColorLevelData = iab::PSAutoColorLevel::Run(imageAData, widthA, heightA);
+    UIImage* autoColorLevelImage = [UIImage imageWithRGBAData:autoColorLevelData withWidth:widthA withHeight:heightA];
+    
+    [_imageView setImage:autoColorLevelImage];
     
 }
 
